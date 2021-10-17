@@ -23,6 +23,4 @@ public interface SystemService  {
 	
 	public List<System> findListByUser(User user);
 	
-	//TEST
-
 }
