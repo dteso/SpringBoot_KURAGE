@@ -38,6 +38,7 @@ public class SystemController {
 			Optional<User> user = userService.findById(system.getUser().getId());
 			system.setUser(user.get());
 			System savedSystem = systemService.save(system);
+			savedSystem.getUser().setPassword("XXXXXXXXX");
 			return ResponseEntity.status(HttpStatus.CREATED).body(savedSystem);
 		}catch(Exception e) {
 			LOGGER.log(Level.SEVERE, e.getLocalizedMessage());
@@ -50,6 +51,7 @@ public class SystemController {
 		LOGGER.log(Level.INFO, "Obteniendo sistemas...");
 		try {
 			Iterable<System> savedSystems = systemService.findAll();
+			savedSystems.forEach(sys -> sys.getUser().setPassword("XXXXXXXXXX")); 
 			return ResponseEntity.status(HttpStatus.ACCEPTED).body(savedSystems);
 		}catch(Exception e) {
 			e.printStackTrace();
@@ -63,6 +65,7 @@ public class SystemController {
 		try {
 			Optional<User> user = userService.findById(userId);
 			List<System> systemsByUser = systemService.findListByUser(user.get());
+			systemsByUser.forEach(sys -> sys.getUser().setPassword("XXXXXXXXXX")); 
 			return ResponseEntity.status(HttpStatus.ACCEPTED).body(systemsByUser);
 		}catch(Exception e) {
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e);

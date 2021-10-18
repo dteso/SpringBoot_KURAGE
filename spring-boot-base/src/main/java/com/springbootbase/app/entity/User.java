@@ -6,6 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -36,6 +37,9 @@ public class User implements java.io.Serializable{
 	private String role;
 	
 	private Boolean google;
+	
+	@Transient
+	private String token;
 	
 	public User(){
 		

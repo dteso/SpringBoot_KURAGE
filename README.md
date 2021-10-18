@@ -25,7 +25,7 @@ Se te abrirá un IDE tipo Eclipse y el paso inicial será seleccionar el propio 
 En caso de que tengas ya Eclipse instalado ve a Help/Market y descarga el plugin directamente.
 	
 
-A continuación se explica paso a paso como se ha construido este mini-proyecto así como los conceptos más BÁSCIOS y FUNDAMENTALES de como 
+A continuación se explica paso a paso como se ha construido este mini-proyecto así como los conceptos más BÃ�SCIOS y FUNDAMENTALES de como 
 levantar una estructura MVC que resultará en un API con un CRUD elemental completo basándonos en JPA-Hibernate y una Base de datos MySQL. RECUERDA TENER LEVANTADA TU BASE DE DATOS CUANDO LEVANTES EL API:
 
 Spring Starter te ayuda a generar tu proyecto, básica y simplemente, nombrando los nombres de tus paquetes y con una configuración mínima como puede ser la selección de Maven o Gradle. Poco más. Asíque el siguiente contenido puede ser una guía en caso de que quieras desarrollarlo de cero tu mismo tras haber arrancado el Starter e inicado tu proyecto. 
@@ -87,7 +87,7 @@ controller --> Se encarga de pintar los datos procesados por el servicio, si pro
 click derecho sobre el proyecto RunAs/SpringBootApp
 
 ### 4. Se habrá generado la tabla y podremos verlo a través del manager o IDE configurado para el control de la base de datos MySQL
-
+ 
 ### 5. Repository
 
 1. Anotación @Repository sobre la interfaz creada
@@ -161,6 +161,6 @@ a partir de aquí vamos a poder definir el comportamiento para cada verbo PUT; P
 	@PutMapping("/{id}") |  @RequstMapping(method = (PUT))																@DeleteMapping("/{id}")	| @RequstMapping(method = (DELETE))														
 																							
 	
-	
+	ghffvghdgfhjgdhjgdfhgh
 	
 	
